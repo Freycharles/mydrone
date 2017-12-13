@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:id="@+id/activity_recognition"
-                xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
                 xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_recognition"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:keepScreenOn="true"
@@ -37,5 +37,10 @@
         android:textOff="@string/follow_me"
         android:textOn="@string/unfollow"
         tools:ignore="RelativeOverlap"/>
+
+    <fr.telecomlille.mydrone.view.CVClassifierView
+        android:id="@+id/cvView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
 </RelativeLayout>
